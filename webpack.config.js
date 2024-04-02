@@ -27,10 +27,9 @@ const config = {
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./Header": "./src/Header.jsx",
         "./InputForm": "./src/InputForm.jsx",
       },
-      shared: {
+      shared: 
         ...deps,
         react: {
           singleton: true,
