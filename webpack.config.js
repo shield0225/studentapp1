@@ -14,8 +14,8 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
   output: {
-    publicPath: "http://localhost:3003/",
-    // publicPath: "https://shield-student-app-1.netlify.app/",
+    // publicPath: "http://localhost:3003/",
+    publicPath: "https://shield-student-app-1.netlify.app/",
   },
   devServer: {
     port: 3003,
