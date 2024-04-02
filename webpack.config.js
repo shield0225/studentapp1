@@ -27,6 +27,7 @@ const config = {
       remotes: {},
       exposes: {
         "./Header": "./src/Header.jsx",
+        "./InputForm": "./src/InputForm.jsx",
       },
       shared: {
         ...deps,
@@ -65,17 +66,15 @@ const config = {
         type: "asset",
       },
       {
-        test: /\.(js|jsx)$/, // Match both .js and .jsx files
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-react"], // This line is optional if you have a Babel configuration file
+            presets: ["@babel/preset-react"],
           },
         },
       },
-      // Add your rules for custom modules here
-      // Learn more about loaders from https://webpack.js.org/loaders/
     ],
   },
   resolve: {
